@@ -1650,7 +1650,7 @@
 
 	#banner {
 		position: relative;
-		background-color: rgba(21, 28, 23, 0.55);
+		background-color: rgba(255, 255, 255, 0.2);
 		background-image: url("images/highlight.png");
 		background-position: top left, center center;
 		background-size: auto, 100% 250%;
@@ -1668,7 +1668,7 @@
 			font-family: 'Open Sans Condensed', sans-serif;
 			font-weight: 700;
 			text-transform: uppercase;
-			color: #AAAAAA;
+			color: #F0F0F0;
 			/* color: #6b7770; */
 			/* color: #575d59; */
 		}
@@ -1678,21 +1678,21 @@
 			-webkit-transition: border-color .2s ease-in-out, color .2s ease-in-out;
 			-ms-transition: border-color .2s ease-in-out, color .2s ease-in-out;
 			transition: border-color .2s ease-in-out, color .2s ease-in-out;
-			color: #b4b7b5;
+			color: #CCCCCC;
 			background: transparent !important;
-			border: solid 4px #575d59;
-			border-color: rgba(87, 93, 89, 0.35);
+			border: solid 4px #616763;
+			border-color: rgba(150, 150, 150, 0.35);
 			border-radius: 16px;
 		}
 
 			#banner .button:hover {
 				color: #e4e7e5;
-				border-color: rgba(87, 93, 89, 0.95);
+				border-color: rgba(200, 200, 200, 0.95);
 			}
 
 			#banner .button:active {
 				color: #fff;
-				border-color: #616763;
+				border-color: #b4b7b5;
 			}
 
 /* Footer */
