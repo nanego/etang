@@ -1633,7 +1633,7 @@
 
 	#banner-wrapper {
 		position: relative;
-		background-image: url("../../images/banner2.jpg");
+		background-image: url("../../images/banner3.jpg");
 		background-position: top left, top left, center center;
 		background-repeat: repeat, repeat, no-repeat;
 		background-size: auto, auto, cover;
@@ -1650,7 +1650,7 @@
 
 	#banner {
 		position: relative;
-		background-color: rgba(255, 255, 255, 0.2);
+		background-color: rgba(10, 10, 10, 0.3);
 		background-image: url("images/highlight.png");
 		background-position: top left, center center;
 		background-size: auto, 100% 250%;
