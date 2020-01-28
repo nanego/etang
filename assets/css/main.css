@@ -2501,6 +2501,7 @@
 					color: #fff;
 					z-index: 1000;
 					text-align: center;
+					padding-left: 31px;
 				}
 
 				#titleBar .toggle {
