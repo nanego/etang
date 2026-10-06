@@ -47,7 +47,6 @@
             height: 300px;
         }
     </style>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD8lpXyVxSbyOBncPmuoj_O6jGgNupn_0"></script>
     <script>
         function initialize() {
             var mapCanvas = document.getElementById('map-canvas');
@@ -65,7 +64,27 @@
             });
         }
 
-        google.maps.event.addDomListener(window, 'load', initialize);
+        // Load Google Maps only when the map is about to scroll into view.
+        document.addEventListener('DOMContentLoaded', function () {
+            var mapCanvas = document.getElementById('map-canvas');
+            function loadMap() {
+                var script = document.createElement('script');
+                script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAD8lpXyVxSbyOBncPmuoj_O6jGgNupn_0&callback=initialize&loading=async';
+                script.async = true;
+                document.head.appendChild(script);
+            }
+            if (!('IntersectionObserver' in window)) {
+                loadMap();
+                return;
+            }
+            var observer = new IntersectionObserver(function (entries) {
+                if (entries[0].isIntersecting) {
+                    observer.disconnect();
+                    loadMap();
+                }
+            }, {rootMargin: '300px'});
+            observer.observe(mapCanvas);
+        });
     </script>
 </head>
 <body>
