@@ -2461,6 +2461,23 @@
 					padding: 0.35em 0;
 				}
 
+		/* Main content first, before the JS reorder runs (avoids a layout shift) */
+
+			.row:has(> .important\28 mobile\29) {
+				display: flex;
+				flex-direction: column;
+			}
+
+				.row > .important\28 mobile\29 {
+					order: -1;
+				}
+
+			/* Reserve room for the France-Voyage calendar, inserted late by its script */
+
+				#calendrier {
+					min-height: 2100px;
+				}
+
 		/* Off-Canvas Navigation */
 
 			#page-wrapper {
