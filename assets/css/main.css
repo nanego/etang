@@ -1244,7 +1244,7 @@
 		text-transform: uppercase;
 		text-decoration: none;
 		background: #b1ddab;
-		color: #fff;
+		color: #2e4a2b;
 		border: 0;
 		line-height: 1em;
 		border-radius: 8px;
@@ -1279,6 +1279,7 @@
 		button.alt,
 		.button.alt {
 			background: #c1cac5;
+			color: #3a4540;
 		}
 
 			input[type="button"].alt:hover,
@@ -1710,7 +1711,7 @@
 		background: #e7eae8;
 		padding: 0.75em 2em 0.75em 2em;
 		border-radius: 8px;
-		color: #8b9790;
+		color: #59655e;
 	}
 
 		.copyright a {
@@ -1985,17 +1986,17 @@
 
 					#nav li:hover a, #nav li:hover span {
 						background: #C1CAC5;
-						color: #fff;
+						color: #3a4540;
 					}
 
 					#nav li.active a, #nav li.active span {
 						background: #C1CAC5;
-						color: #fff;
+						color: #3a4540;
 					}
 
 					#nav li.current a {
 						background: #b1ddab;
-						color: #fff;
+						color: #2e4a2b;
 					}
 
 			.dropotron {
@@ -2455,6 +2456,11 @@
 					line-height: inherit;
 				}
 
+				.copyright .menu li a {
+					display: inline-block;
+					padding: 0.35em 0;
+				}
+
 		/* Off-Canvas Navigation */
 
 			#page-wrapper {
@@ -2527,7 +2533,7 @@
 						width: 44px;
 						height: 44px;
 						content: '\f0c9';
-						color: #fff;
+						color: #2e4a2b;
 						text-align: center;
 						line-height: 44px;
 						font-size: 20px;
