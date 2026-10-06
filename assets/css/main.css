@@ -1633,9 +1633,9 @@
 	#banner-wrapper {
 		position: relative;
 		background-image: url("../../images/banner3.jpg");
-		background-position: top right, top right, center center;
-		background-repeat: repeat, repeat, no-repeat;
-		background-size: auto, auto, cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
 		z-index: 1;
 	}
 
@@ -2385,6 +2385,8 @@
 			#banner-wrapper {
 				padding: 9em 0 5em 0;
 				background-image: url("../../images/banner3-mobile.jpg");
+				background-position: top right;
+				background-size: auto;
 			}
 
 			#main-wrapper {
