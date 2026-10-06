@@ -45,11 +45,27 @@
         #map-canvas {
             width: 100%;
             height: 300px;
+            background: #e7eae8 url("images/carte-chargement.jpg") center / cover no-repeat;
         }
+
+        #map-canvas .map-loading {
+            margin: 0;
+            line-height: 300px;
+            text-align: center;
+        }
+
+            #map-canvas .map-loading span {
+                background: rgba(255, 255, 255, 0.85);
+                color: #3a4540;
+                padding: 0.5em 1em;
+                border-radius: 6px;
+            }
     </style>
     <script>
         function initialize() {
             var mapCanvas = document.getElementById('map-canvas');
+            mapCanvas.innerHTML = '';
+            mapCanvas.style.backgroundImage = 'none';
             var myLatLng = new google.maps.LatLng(48.5528760, 4.7444515);
             var mapOptions = {
                 center: myLatLng,
@@ -163,7 +179,7 @@
 
                             <section>
                                 <p>
-                                <div id="map-canvas"></div>
+                                <div id="map-canvas"><p class="map-loading"><span>Chargement de la carte en cours…</span></p></div>
                                 </p>
 
                                 <p>
